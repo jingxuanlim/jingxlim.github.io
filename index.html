@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>Lim, Jing Xuan | Janelia Graduate Scholar</title>
+<title>Lim, Jing-Xuan | JHU-Janelia Joint Graduate Student  &lt;!-- JHU Neuroscience Graduate Student --&gt;</title>
 <style type="text/css">
 
 article,
@@ -258,7 +258,7 @@ body.pdf a {
   word-wrap: break-word;
 }
 body.pdf a[href$='.pdf'] {
-  background: url(icons/pdf_icon.svg) left center no-repeat;
+  background: url(https://jingxlim.github.io/icons/pdf_icon.svg) left center no-repeat;
   white-space: nowrap;
   background-size: contain;
 }
@@ -354,16 +354,7 @@ body.pdf #references+ul {
 }
 body.pdf #references+ul li {
   display: block;
-  width: 32%;
-}
-body.pdf #references+ul li:nth-child(1) {
   width: 33%;
-}
-body.pdf #references+ul li:nth-child(2) {
-  width: 36%;
-}
-body.pdf #references+ul li:nth-child(3) {
-  width: 31%;
 }
 body.pdf #references+ul dl {
   margin: 0;
@@ -453,15 +444,23 @@ body.pdf #programs+table td:nth-child(2),
 body.pdf #conferences+table td:nth-child(2) {
   width: 41%;
 }
-body.pdf #programs+table td:nth-child(1),
-body.pdf #travel+table td:nth-child(1),
-body.pdf #coursework+table td:nth-child(1) {
-  width: 80%;
+body.pdf #fellowshipsshort+table td,
+body.pdf #travelshort+table td,
+body.pdf #programsshort+table td,
+body.pdf #conferencesshort+table td {
+  padding-bottom: 0px;
 }
-body.pdf #programs+table td:nth-child(2),
-body.pdf #travel+table td:nth-child(2),
+body.pdf #fellowshipsshort+table td:nth-child(1),
+body.pdf #travelshort+table td:nth-child(1),
+body.pdf #programsshort+table td:nth-child(1),
+body.pdf #conferencesshort+table td:nth-child(1) {
+  width: 87%;
+}
+body.pdf #coursework+table td:nth-child(1) {
+  width: 65%;
+}
 body.pdf #coursework+table td:nth-child(2) {
-  width: 20%;
+  width: 35%;
 }
 body.pdf div.footer {
   display: none;
@@ -507,7 +506,7 @@ body.pdf div.personalstatement h4+ul {
   content: ".";
 }
 body {
-  font-family: 'Hoefler Text', Times New Roman, Times, serif;
+  font-family: TimesNewRomanPSMT, "Times New Roman", Times, serif;
   color: #444;
 }
 h1,
@@ -533,7 +532,7 @@ a {
   color: #990003;
 }
 a[href$='.pdf'] {
-  background: url(icons/pdf_icon.svg) right center no-repeat;
+  background: url(https://jingxlim.github.io/icons/pdf_icon.svg) right center no-repeat;
   padding: 0 25px 0 0;
   white-space: nowrap;
   background-size: contain;
@@ -695,21 +694,34 @@ table td:nth-child(1) {
 table td:nth-child(2) {
   width: 45%;
 }
-#programs+table td:nth-child(1),
-#travel+table td:nth-child(1),
 #coursework+table td:nth-child(1) {
-  width: 80%;
+  width: 65%;
 }
-#programs+table td:nth-child(2),
-#travel+table td:nth-child(2),
 #coursework+table td:nth-child(2) {
-  width: 20%;
+  width: 35%;
 }
 #fellowships+table thead,
 #travel+table thead,
 #programs+table thead,
-#conferences+table thead {
+#conferences+table thead,
+#fellowshipsshort+table thead,
+#travelshort+table thead,
+#programsshort+table thead,
+#conferencesshort+table thead,
+#teaching+table thead {
   display: none;
+}
+#fellowshipsshort+table td:nth-child(1),
+#travelshort+table td:nth-child(1),
+#programsshort+table td:nth-child(1),
+#conferencesshort+table td:nth-child(1) {
+  width: 85%;
+}
+#teaching+table td:nth-child(1) {
+  width: 75%;
+}
+#teaching+table td:nth-child(2) {
+  width: 15%;
 }
 #footer {
   display: none;
@@ -944,15 +956,16 @@ div.personalstatement p {
 
 <div class="container">
     <div class="resume">
-        <h1>Lim, Jing Xuan</h1>
+        <h1>Lim, Jing-Xuan</h1>
 
-<h2>Janelia Graduate Scholar</h2>
+<h2>JHU-Janelia Joint Graduate Student  <!-- JHU Neuroscience Graduate Student --></h2>
 
-<!-- ## JHU-Janelia Joint Graduate Student -->
+<!-- ## A*STAR National Science Fellow  <\!-- ## Janelia Graduate Scholar -\-> -->
 
 <blockquote>
-  <p><a href="cv.pdf">Download PDF</a><br />
+  <p><a href="https://jingxlim.github.io/cv.pdf">Download PDF</a><br />
   <a href="mailto:limj2@janelia.hhmi.org">limj2@janelia.hhmi.org</a><br />
+  <!-- > [jlim56@jhmi.edu](mailto:jlim56@jhmi.edu) -->
   <a href="https://jingxlim.github.io/"></a></p>
 </blockquote>
 
@@ -960,7 +973,7 @@ div.personalstatement p {
 
 <h3 id="profile">Profile</h3>
 
-<p>I am a graduate student in the laboratory of Misha Ahrens where I work with the larval zebrafish. My research interest is in attaining a quantitative description of the neural computations underlying complex behavior and to understand the biophysical mechanisms that support them.</p>
+<p>I am a PhD candidate in the laboratory of Misha Ahrens and co-supervised by James Fitzgerald. I am interested in how past experiences change current brain representations and actions, and the computations that underlie them. In applying for this school, I would like to gain proficiency in the use of statistical methods to discover interesting representations in high-dimensional data; and to gain the necessary skills to model action selection.</p>
 
 <hr />
 
@@ -969,15 +982,15 @@ div.personalstatement p {
 <ul>
 <li><dl>
 <dt>Functional imaging</dt>
-<dd>Whole-brain light-sheet and two-photon calcium imaging of larval zebrafish fictively-behaving in a virtual reality environment. Voltage imaging of larval zebrafish using Voltron. Craniotomy, stereotaxic viral injection, fiber implantation and <i>in vivo</i> calcium fiber photometry in freely-moving mice.</dd>
+<dd>Whole-brain <i>in vivo</i> light-sheet and two-photon calcium and voltage imaging of larval zebrafish fictively-behaving in a virtual reality environment. Craniotomy, stereotaxic viral injection, fiber implantation and <i>in vivo</i> calcium fiber photometry in freely-moving mice.</dd>
 </dl></li>
 <li><dl>
-<dt>Data analysis</dt>
-<dd>Distributed computation for analysis of whole-brain calcium imaging data. Development, simulation and analysis of multiscale models of biological neuronal networks in NEURON, using NetPyNE. Compartmental modeling of neuronal morphologies. generalized linear models for spiking activity and animal behavior.</dd>
+<dt>Neural data</dt>
+<dd>Distributed computation for the analysis of biological and generation of simulated data. Development, simulation and analysis of multiscale models of biological neuronal networks in NEURON, using NetPyNE. Encoding models for calcium imaging and multi-electrode spiking data. Compartmental modeling of neuronal morphologies.</dd>
 </dl></li>
 <li><dl>
 <dt>Electrophysiology</dt>
-<dd>Rodent surgery and preparation of acute brain slices. <i>In vitro</i> patch clamp and field recordings. Biocytin labelling and post hoc recovery of cell morphologies using Neurolucida. Extracellular multiunit recordings and iontophoresis in head-fixed, non-anesthetized barn owls during the presentation of visual stimuli.</dd>
+<dd>Rodent surgery and preparation of acute brain slices. <i>In vitro</i> patch clamp and field recordings. Biocytin labelling and post-hoc recovery of cell morphologies using Neurolucida. Extracellular multiunit recordings and iontophoresis in head-fixed, non-anesthetized barn owls.</dd>
 </dl></li>
 </ul>
 
@@ -989,8 +1002,9 @@ div.personalstatement p {
 <dt>Johns Hopkins University, United States of America</dt>
 <dd><em>PhD Neuroscience</em>
 <strong>2017-present</strong>
-<b>Thesis advisor:</b> Misha Ahrens (Janelia) and Dwight Bergles (Hopkins)<br />
-<!-- <b>Scholarship:</b> National Science Scholarship (PhD) from A*STAR, Singapore --></dd>
+<b>Thesis advisors:</b> Misha Ahrens (Janelia), James Fitzgerald (Janelia) and Dwight Bergles (Hopkins)<br />
+<b>Thesis:</b> State modulation of sensorimotor transformations<br />
+<b>Fellowship:</b> National Science Scholarship (PhD) from A*STAR, Singapore</dd>
 
 <dt>University College London, United Kingdom</dt>
 <dd><em>BSc Neuroscience</em>
@@ -1018,10 +1032,10 @@ div.personalstatement p {
 
 <dl>
 <dt>Dr Misha Ahrens :: Janelia Research Campus, HHMI</dt>
-<dd><em>Janelia Graduate Scholar</em>
+<dd><em>JHU-Janelia Joint Graduate Student</em>
 <strong><nobr>Jun 2018-present</nobr></strong>
 <u><b>State modulation of sensorimotor transformations</b></u><br />
-Animals frequently switch between behavioral states in response to changes in their environment, in which they execute different sets of spontaneous and sensory-evoked behaviors. Using functional imaging methods, I aim to provide a computational description of how whole-brain information processing is altered during state changes. Harnessing the power of molecular techniques, I will also perform perturbation experiments in order to understand the underlying circuit and synaptic mechanisms.</dd>
+Animals frequently switch between behavioral states in response to changes in their environment, in which they execute different sets of spontaneous and sensory-evoked behaviors. Using functional imaging methods, I aim to provide a computational description of how whole-brain information processing is altered by past experience. Harnessing the power of molecular techniques, I will also perform perturbation experiments in order to understand the underlying network and circuit mechanisms that allow neuromodulatory systems to exert widespread control.</dd>
 
 <dt>Prof Shreesh Mysore :: Johns Hopkins University</dt>
 <dd><em>Graduate Rotation Student</em>
@@ -1036,12 +1050,13 @@ Computational circuit models predict that reciprocal inhibition of inhibition be
 <b>Co-supervisor: Dr Pierre Sacre, Institute of Computational Medicine</b><br />
 To better understand gambling behaviour in monkeys made to perform a multiattribute decision-making task, I constructed a generalised linear encoding model with present and past trial return and risk as covariates.</dd>
 
-<dt><!-- Dr Misha Ahrens :: Janelia Research Campus, HHMI --></dt>
-<dt><!-- : *Graduate Rotation Student* --></dt>
-<dt><!--   __<nobr>Jun 2017-Aug 2017</nobr>__ --></dt>
-<dt><!--   <u><b>Role of Neuropil 4 oscillatory dynamics in heart rate and swim</b></u>   --></dt>
-<dt><!--   To draw functional connections between oscillations in Neuropil 4 and physiology, I performed two-photon calcium imaging at various planes spanning Neuropil 4 while electrophysiologically recording heart rate and fictive behaviour while the zebrafish performed a visuomotor response task. I also performed whole-brain light sheet imaging in order to characterize oscillations in Neuropil 4 with neural activity dynamics in other areas. --></dt>
-<dt>Prof Fu Yu :: National University of Singapore</dt>
+<dt>Dr Misha Ahrens :: Janelia Research Campus, HHMI</dt>
+<dd><em>Graduate Rotation Student</em>
+<strong><nobr>Jun 2017-Aug 2017</nobr></strong>
+<u><b>Role of Neuropil 4 oscillatory dynamics in heart rate and swim</b></u><br />
+To draw functional connections between oscillations in Neuropil 4 and physiology, I performed two-photon calcium imaging at various planes spanning Neuropil 4 while electrophysiologically recording heart rate and fictive behaviour while the zebrafish performed a visuomotor response task. I also performed whole-brain light sheet imaging in order to characterize oscillations in Neuropil 4 with neural activity dynamics in other areas.</dd>
+
+<dt>Prof Fu Yu :: Agency for Science, Technology and Research</dt>
 <dd><em>Research Officer</em>
 <strong><nobr>Dec 2016-Jun 2017</nobr></strong>
 <u><b>Role of ventrolateral hypothalamic SST neurons in feeding behaviors</b></u><br />
@@ -1088,7 +1103,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 
 <div>
 
-<h4 id="fellowships">Fellowships</h4>
+<h4 id="fellowshipsshort">Fellowships</h4>
 
 <table>
 <thead>
@@ -1109,7 +1124,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 </tbody>
 </table>
 
-<h4 id="travel">Travel Scholarships</h4>
+<h4 id="travelshort">Travel Scholarships</h4>
 
 <table>
 <thead>
@@ -1120,13 +1135,14 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 </thead>
 <tbody>
 <tr>
-  <td align="left"><strong>A&#42;STAR/RIKEN BSI Summer Program Travel Award</strong></td>
+  <td align="left"><strong>A&#42;STAR-RIKEN BSI Summer Program Travel Award</strong></td>
   <td align="right"><strong>2016</strong></td>
 </tr>
 </tbody>
 </table>
 
-<p><!-- | Name of Award                                          | Benefit                                             | Year               | -->
+<p><!-- #### Fellowships {#fellowships} -->
+<!-- | Name of Award                                          | Benefit                                             | Year               | -->
 <!-- |:-------------------------------------------------------|:----------------------------------------------------|-------------------:| -->
 <!-- | **A\*STAR National Science Scholarship (BS)**          |Full financial support for undergrad studies         | **2012-2015**      | -->
 <!-- | **A\*STAR National Science Scholarship (PhD)**         |Full financial support for PhD studies               | **2017-2022**      | --></p>
@@ -1144,22 +1160,26 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 
 <!-- possible sections: peer-reviewed papers, conference papers and talks (refereed), patents, theses, book and book chapters -->
 
-<!-- #### Journal Articles -->
+<h4>Journal Articles</h4>
 
-<!-- * <u><b>Jing Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton. <b>Computational models of claustrum subnetworks.</b> <i>Manuscript in preparation.</i> -->
+<ul>
+<li>Siew Cheng Phua, Yu Lin Tan, Esra Senol, Chun-Yao Lee, Jin Hui C. Chiam, Yanmin Peng, Hasan Mohammad, <u><b>Jing-Xuan Lim</b></u>, Yu Fu. <b>A distinct parabrachial circuit for motical suppression by acute pain.</b> <i>In preparation for re-submission.</i></li>
+<li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton. <b>Computational models of claustrum subnetworks.</b> <i>In preparation.</i></li>
+</ul>
 
 <h4>Posters</h4>
 
 <ul>
-<li><u><b>Jing Xuan Lim</b></u>, Alireza Sheikhattar, Ziqiang Wei, Misha Ahrens (2018). <b>Neural oscillations in sensorimotor processing.</b> <i>28th annual Neuroscience Department and Neuroscience Training Program Retreat</i> <a href="https://jingxlim.github.io/jhu18.pdf"></a></li>
-<li><u><b>Jing Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton (2016). <b>Computational models of claustrum subnetworks.</b> <i>Society for Claustrum Research Annual Symposium 2016</i> <a href="https://jingxlim.github.io/scr16.pdf"></a></li>
-<li><u><b>Jing Xuan Lim</b></u>, Salvador Dura-Bernal, Rena Orman, Christoph Kayser, George J. Augustine, William W. Lytton (2016). <b>Reconstruction and simulation of claustral microcircuitry based on optogenetic mapping.</b> <i>RIKEN Brain Science Institute Summer Program 2016.</i> <a href="https://jingxlim.github.io/riken16.pdf"></a></li>
+<li><u><b>Jing-Xuan Lim</b></u> &amp; Misha Ahrens (2018). <b>State modulation of sensorimotor processing.</b> <i>29th annual Neuroscience Department and Neuroscience Training Program Retreat</i> <a href="https://jingxlim.github.io/jhu19.pdf"></a></li>
+<li><u><b>Jing-Xuan Lim</b></u>, Alireza Sheikhattar, Ziqiang Wei, Misha Ahrens (2018). <b>Neural oscillations in sensorimotor processing.</b> <i>28th annual Neuroscience Department and Neuroscience Training Program Retreat</i> <a href="https://jingxlim.github.io/jhu18.pdf"></a></li>
+<li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton (2016). <b>Computational models of claustrum subnetworks.</b> <i>Society for Claustrum Research Annual Symposium 2016</i> <a href="https://jingxlim.github.io/scr16.pdf"></a></li>
+<li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, Rena Orman, Christoph Kayser, George J. Augustine, William W. Lytton (2016). <b>Reconstruction and simulation of claustral microcircuitry based on optogenetic mapping.</b> <i>RIKEN Brain Science Institute Summer Program 2016.</i> <a href="https://jingxlim.github.io/riken16.pdf"></a></li>
 </ul>
 
 <h4>Theses</h4>
 
 <ul>
-<li><u><b>Jing Xuan Lim</b></u> and Beverley A. Clark (2015). <b>Patch-clamp analysis of miniature synaptic currents in layer 5 cortical pyramidal cells of a Bardet-Biedl Syndrome mouse model.</b> <i>BSc dissertation, University College London.</i> <a href="https://jingxlim.github.io/ucl15.pdf"></a></li>
+<li><u><b>Jing-Xuan Lim</b></u> and Beverley A. Clark (2015). <b>Patch-clamp analysis of miniature synaptic currents in layer 5 cortical pyramidal cells of a Bardet-Biedl Syndrome mouse model.</b> <i>BSc dissertation, University College London.</i> <a href="https://jingxlim.github.io/ucl15.pdf"></a></li>
 </ul>
 
 <hr />
@@ -1168,7 +1188,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 
 <div>
 
-<h4 id="programs">Research programs</h4>
+<h4 id="programsshort">Advanced training</h4>
 
 <table>
 <thead>
@@ -1186,95 +1206,136 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
   <td align="left"><strong>Janelia/MSRI Summer Graduate School on Mathematical Analysis of Behavior</strong></td>
   <td align="right"><strong>2018</strong></td>
 </tr>
+<tr>
+  <td align="left"><strong>Fundamental Principles of Microscopy for Biologists</strong></td>
+  <td align="right"><strong>2019</strong></td>
+</tr>
+<tr>
+  <td align="left"><strong>FIJI Image Processing and Analysis Workshop</strong></td>
+  <td align="right"><strong>2019</strong></td>
+</tr>
 </tbody>
 </table>
 
-<p><!-- | Course                                    | University                                                      | Year                 | -->
-<!-- |:------------------------------------------|:----------------------------------------------------------------|---------------------:| -->
-<!-- | **RIKEN BSI Summer Program**              | RIKEN Bran Science Institute                                    | **2016**             | --></p>
+<p><!-- #### Advanced training {#programs} -->
+<!-- | Course                          | University                           | Year                 | -->
+<!-- |:--------------------------------|:-------------------------------------|---------------------:| -->
+<!-- | **RIKEN BSI Summer Program**    | RIKEN Bran Science Institute         | **2016**             | --></p>
 
 <!-- #### Conferences {#conferences} -->
 
-<p><!-- | Conference                                | Organizer                                                       | Year                 | -->
-<!-- |:------------------------------------------|:----------------------------------------------------------------|---------------------:| -->
-<!-- | **47th Annual Meeting**                   | Society for Neuroscience                                        | **2017**             | -->
-<!-- | **46th Annual Meeting**                   | Society for Neuroscience                                        | **2016**             | -->
-<!-- | **Deep Learning Summit Asia**             | RE•WORK                                                         | **2016**             | --></p>
+<p><!-- | Conference                      | Organizer                            | Year                 | -->
+<!-- |:--------------------------------|:-------------------------------------|---------------------:| -->
+<!-- | **47th Annual Meeting**         | Society for Neuroscience             | **2017**             | -->
+<!-- | **46th Annual Meeting**         | Society for Neuroscience             | **2016**             | -->
+<!-- | **Deep Learning Summit Asia**   | RE•WORK                              | **2016**             | --></p>
 
 <!-- #### Coursework {#coursework} -->
 
-<p><!-- | Neurobiology, Neural Systems and Behaviour                      |                                                           | -->
-<!-- |:----------------------------------------------------------------|----------------------------------------------------------:| -->
-<!-- | Neuroscience and Cognition I & II                               | Hopkins                                                   | -->
-<!-- | The Cellular Basis of Brain Function                            | UCL                                                       | -->
-<!-- | Neural Basis of Motivation and Learning                         | UCL                                                       | -->
-<!-- | Physiology of Sensory Transduction                              | Hopkins                                                   | -->
-<!-- | Perception, Attention and Action                                | UCL                                                       | -->
-<!-- | Pain                                                            | UCL                                                       | -->
-<!-- | Synaptic Pharmacology                                           | UCL                                                       | -->
-<!-- | Current Issues in Systems and Cognitive Neuroscience            | Hopkins                                                   | -->
-<!-- | Current Topics in Neuroscience                                  | Hopkins                                                   | -->
-<!-- | Readings in Systems Neuroscience                                | Hopkins                                                   | -->
-<!-- | Systems Neuroscience                                            | UCL                                                       | -->
-<!-- | Structure and Function of Nervous Systems                       | UCL                                                       | -->
-<!-- | Cellular Neurophysiology                                        | UCL                                                       | -->
-<!-- | Human Neuroanatomy                                              | UCL                                                       | -->
-<!-- | Introduction to Neuroscience                                    | UCL                                                       | --></p>
+<p><!-- | Neurobiology, Neural Systems and Behaviour                      |                        | -->
+<!-- |:----------------------------------------------------------------|-----------------------:| -->
+<!-- | Neuroscience and Cognition I & II                               | Hopkins                | -->
+<!-- | The Cellular Basis of Brain Function                            | UCL                    | -->
+<!-- | Neural Basis of Motivation and Learning                         | UCL                    | -->
+<!-- | Physiology of Sensory Transduction                              | Hopkins                | -->
+<!-- | Perception, Attention and Action                                | UCL                    | -->
+<!-- | Pain                                                            | UCL                    | -->
+<!-- | Synaptic Pharmacology                                           | UCL                    | -->
+<!-- | Current Issues in Systems and Cognitive Neuroscience            | Hopkins                | -->
+<!-- | Current Topics in Neuroscience                                  | Hopkins                | -->
+<!-- | Readings in Systems Neuroscience                                | Hopkins                | -->
+<!-- | Systems Neuroscience                                            | UCL                    | -->
+<!-- | Structure and Function of Nervous Systems                       | UCL                    | -->
+<!-- | Cellular Neurophysiology                                        | UCL                    | -->
+<!-- | Human Neuroanatomy                                              | UCL                    | -->
+<!-- | Introduction to Neuroscience                                    | UCL                    | --></p>
 
-<p><!-- | Neural Computation and Neuroengineering                         |                                                           | -->
-<!-- |:----------------------------------------------------------------|----------------------------------------------------------:| -->
-<!-- | Theoretical Neuroscience                                        | Hopkins                                                   | -->
-<!-- | Models of the Neuron                                            | Hopkins                                                   | -->
-<!-- | Quantitative Methods for Brain Sciences                         | Hopkins (audit)                                           | --></p>
+<p><!-- | Neural Computation and Neuroengineering                         |                        | -->
+<!-- |:----------------------------------------------------------------|-----------------------:| -->
+<!-- | Theoretical Neuroscience                                        | Hopkins                | -->
+<!-- | Models of the Neuron                                            | Hopkins                | -->
+<!-- | Quantitative Methods for Brain Sciences                         | Hopkins (audit)        | --></p>
 
-<p><!-- | Computer Science and Applied Mathematics                        |                                                           | -->
-<!-- |:----------------------------------------------------------------|----------------------------------------------------------:| -->
-<!-- | Mathematical Foundations of BME                                 | Hopkins                                                   | -->
-<!-- | Linear Algebra and Differential Equations                       | Hopkins                                                   | -->
-<!-- | Statistics for Laboratory Scientists I & II                     | Hopkins                                                   | -->
-<!-- | Programming for Everybody                                       | U Michigan (Coursera)                                     | -->
-<!-- | Python Data Structures                                          | U Michigan (Coursera)                                     | -->
-<!-- | Introduction to Python for Data Science                         | Microsoft (edX)                                           | --></p>
+<p><!-- | Computer Science and Applied Mathematics                        |                        | -->
+<!-- |:----------------------------------------------------------------|-----------------------:| -->
+<!-- | Mathematical Foundations of BME                                 | Hopkins                | -->
+<!-- | Linear Algebra and Differential Equations                       | Hopkins                | -->
+<!-- | Statistics for Laboratory Scientists I & II                     | Hopkins                | -->
+<!-- | Programming for Everybody                                       | U Michigan (Coursera)  | -->
+<!-- | Python Data Structures                                          | U Michigan (Coursera)  | -->
+<!-- | Introduction to Python for Data Science                         | Microsoft (edX)        | --></p>
 
-<p><!-- | Biology                                                         |                                                           | -->
-<!-- |:----------------------------------------------------------------|----------------------------------------------------------:| -->
-<!-- | General and Systemic Pharmacology                               | UCL                                                       | -->
-<!-- | Molecular Biology                                               | UCL                                                       | -->
-<!-- | Mammalian Physiology                                            | UCL                                                       | -->
-<!-- | Cell Physiology and Developmental Biology                       | UCL                                                       | -->
-<!-- | Chemistry for Biology Students                                  | UCL                                                       | -->
-<!-- | Biochemistry and Molecular Biology                              | UCL                                                       | -->
-<!-- | Introduction to Genetics                                        | UCL                                                       | --></p>
+<p><!-- | Biology                                                         |                        | -->
+<!-- |:----------------------------------------------------------------|-----------------------:| -->
+<!-- | General and Systemic Pharmacology                               | UCL                    | -->
+<!-- | Molecular Biology                                               | UCL                    | -->
+<!-- | Mammalian Physiology                                            | UCL                    | -->
+<!-- | Cell Physiology and Developmental Biology                       | UCL                    | -->
+<!-- | Chemistry for Biology Students                                  | UCL                    | -->
+<!-- | Biochemistry and Molecular Biology                              | UCL                    | -->
+<!-- | Introduction to Genetics                                        | UCL                    | --></p>
 
-<p><!-- | Miscellaneous                                                   |                                                           | -->
-<!-- |:----------------------------------------------------------------|----------------------------------------------------------:| -->
-<!-- | Sociology of Science                                            | UCL                                                       | -->
-<!-- | Learning How to Learn                                           | UC San Diego (Coursera)                                   | --></p>
+<p><!-- | Miscellaneous                                                   |                        | -->
+<!-- |:----------------------------------------------------------------|-----------------------:| -->
+<!-- | Sociology of Science                                            | UCL                    | -->
+<!-- | Learning How to Learn                                           | UC San Diego (Coursera)| --></p>
 
-<!-- | **Computational Neuroscience**                           | U Washington (Coursera)                             | -->
+<!-- | **Computational Neuroscience**                                  | U Washington (Coursera)| -->
 
 </div>
 
 <hr />
 
-<!-- try and keep the number of elements of table to multiples of three -->
+<div>
 
-<h3 id="language">Language</h3>
+<h3 id="teaching">Teaching</h3>
 
-<ol>
-<li>Python</li>
-<li>MATLAB</li>
-<li>R</li>
-<li>Bash</li>
-<li>tcsh</li>
-<li>HOC</li>
-<li>NMDOL</li>
-<li>Emacs Lisp</li>
-<li>Markdown</li>
-<li>Org Mode</li>
-<li>HTML</li>
-<li>CSS</li>
-</ol>
+<table>
+<thead>
+<tr>
+  <th align="left">Course</th>
+  <th>Role</th>
+  <th align="right">Year</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td align="left"><strong>JHU Neuroscience Boot Camp</strong></td>
+  <td>Instructor</td>
+  <td align="right"><strong>2019</strong></td>
+</tr>
+<tr>
+  <td align="left"><strong>Mathematical methods for neuroscience and machine learning</strong></td>
+  <td>TA</td>
+  <td align="right"><strong>2019</strong></td>
+</tr>
+<tr>
+  <td align="left"><strong>Learning to use Suite2p workshop</strong></td>
+  <td>TA</td>
+  <td align="right"><strong>2019</strong></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<hr />
+
+<p><!-- try and keep the number of elements of table to multiples of three -->
+<!-- ### Language {#language} --></p>
+
+<p><!-- 1. Python -->
+<!-- 2. MATLAB -->
+<!-- 3. R -->
+<!-- 4. Bash -->
+<!-- 5. tcsh -->
+<!-- 6. HOC -->
+<!-- 7. NMDOL -->
+<!-- 8. Emacs Lisp -->
+<!-- 9. Markdown -->
+<!-- 10. Org Mode -->
+<!-- 11. HTML -->
+<!-- 12. CSS --></p>
 
 <p><!-- ### Software {#software} -->
 <!-- <\!-- decided to only feature software development software here -- NEURON, Axograph, stimfit, Neo IO etc all go under the "Skills" section -\-> --></p>
@@ -1292,7 +1353,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 <!-- 11. InDesign -->
 <!-- 12.  --></p>
 
-<hr />
+<!-- ------ -->
 
 <h3 id="references">References</h3>
 
@@ -1301,21 +1362,26 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 <dt><nobr>Misha Ahrens</nobr></dt>
 <dd><nobr>PhD mentor</nobr><br />
 <nobr>+1 571 209 4174</nobr><br />
-ahrensm@janelia.hhmi.org</dd>
+<nobr>ahrensm@janelia.hhmi.org</nobr></dd>
+</dl></li>
+<li><dl>
+<dt><nobr>James Fitzgerald</nobr></dt>
+<dd><nobr>PhD mentor</nobr><br />
+<nobr>+1 571 209 4358</nobr><br />
+<nobr>fitzgeraldj@janelia.hhmi.org</nobr></dd>
 </dl></li>
 <li><dl>
 <dt><nobr>George Augustine</nobr></dt>
-<dd><nobr>Research Supervisor</nobr><br />
+<dd><nobr>Postbaccalaureate mentor</nobr><br />
 <nobr>+65 6778 2012</nobr><br />
-george.augustine@ntu.edu.sg</dd>
-</dl></li>
-<li><dl>
-<dt><nobr>Beverley Clark</nobr></dt>
-<dd><nobr>Thesis Supervisor</nobr><br />
-<nobr>+44 020 7679 6955</nobr><br />
-b.clark@ucl.ac.uk</dd>
+<nobr>george.augustine@ntu.edu.sg</nobr></dd>
 </dl></li>
 </ul>
+
+<p><!-- * <nobr>Beverley Clark</nobr> -->
+<!--  : <nobr>Thesis Supervisor</nobr>   -->
+<!--  <nobr>+44 020 7679 6955</nobr>   -->
+<!--  b.clark@ucl.ac.uk --></p>
 
 <p><!-- * <nobr>William Lytton</nobr> -->
 <!--  : <nobr>Research Supervisor</nobr>   -->
@@ -1328,7 +1394,7 @@ b.clark@ucl.ac.uk</dd>
 
 <h3 id="footer">Footer</h3>
 
-<p>LIM, Jing Xuan &#8212; <a href="limj2@janelia.hhmi.org">limj2@janelia.hhmi.org</a></p>
+<p>LIM, Jing-Xuan &#8211; <a href="limj2@janelia.hhmi.org">limj2@janelia.hhmi.org</a></p>
 
 <hr />
 
