@@ -262,15 +262,49 @@ body.pdf ul dl dt {
 }
 body.pdf a {
   text-decoration: none;
-  color: black;
+  color: #1A0DAB;
   word-wrap: break-word;
 }
-body.pdf a[href*='www.biorxiv.org'] {
+body.pdf a[href*='https://www.tandfonline.com'] {
+  background: url(https://jingxlim.github.io/icons/icon_link.png) left center no-repeat;
+  White-space: nowrap;
+  background-size: contain;
+}
+body.pdf a[href*='https://www.tandfonline.com']:after {
+  content: "\00a0\00a0\00a0\00a0\00a0" attr(href);
+}
+body.pdf a[href*='www.biorxiv.org'],
+body.pdf a[href*='https://doi.org/10.1101'] {
   background: url(https://jingxlim.github.io/icons/icon_bioRX.png) left center no-repeat;
   White-space: nowrap;
   background-size: contain;
 }
-body.pdf a[href*='www.biorxiv.org']:after {
+body.pdf a[href*='www.biorxiv.org']:after,
+body.pdf a[href*='https://doi.org/10.1101']:after {
+  content: "\00a0\00a0\00a0\00a0\00a0" attr(href);
+}
+body.pdf a[href*='https://doi.org/10.25378'] {
+  background: url(https://jingxlim.github.io/icons/icon_figshare.svg) left center no-repeat;
+  White-space: nowrap;
+  background-size: contain;
+}
+body.pdf a[href*='https://doi.org/10.25378']:after {
+  content: "\00a0\00a0\00a0\00a0\00a0" attr(href);
+}
+body.pdf a[href*='https://www.science.org/doi/10.1126'] {
+  background: url(https://jingxlim.github.io/icons/icon_science-advances.jpg) left center no-repeat;
+  White-space: nowrap;
+  background-size: contain;
+}
+body.pdf a[href*='https://www.science.org/doi/10.1126']:after {
+  content: "\00a0\00a0\00a0\00a0\00a0" attr(href);
+}
+body.pdf a[href*='http://meetings.aps.org'] {
+  background: url(https://jingxlim.github.io/icons/icon_aps-physics.gif) left center no-repeat;
+  White-space: nowrap;
+  background-size: contain;
+}
+body.pdf a[href*='http://meetings.aps.org']:after {
   content: "\00a0\00a0\00a0\00a0\00a0" attr(href);
 }
 body.pdf a[href$='.pdf'] {
@@ -576,8 +610,33 @@ ul dl dt {
 a {
   color: #990003;
 }
-a[href*='www.biorxiv.org'] {
+a[href*='https://www.tandfonline.com'] {
+  background: url(https://jingxlim.github.io/icons/icon_link.svg) right center no-repeat;
+  padding: 0 20px 0 0;
+  white-space: nowrap;
+  background-size: contain;
+}
+a[href*='www.biorxiv.org'],
+a[href*='https://doi.org/10.1101'] {
   background: url(https://jingxlim.github.io/icons/icon_bioRxiv.svg) right center no-repeat;
+  padding: 0 20px 0 0;
+  white-space: nowrap;
+  background-size: contain;
+}
+a[href*='https://doi.org/10.25378'] {
+  background: url(https://jingxlim.github.io/icons/icon_figshare.svg) right center no-repeat;
+  padding: 0 20px 0 0;
+  white-space: nowrap;
+  background-size: contain;
+}
+a[href*='https://www.science.org/doi/10.1126'] {
+  background: url(https://jingxlim.github.io/icons/icon_science-advances.jpg) right center no-repeat;
+  padding: 0 20px 0 0;
+  white-space: nowrap;
+  background-size: contain;
+}
+a[href*='http://meetings.aps.org'] {
+  background: url(https://jingxlim.github.io/icons/icon_aps-physics.gif) right center no-repeat;
   padding: 0 20px 0 0;
   white-space: nowrap;
   background-size: contain;
@@ -1017,14 +1076,17 @@ div.personalstatement p {
   <p><a href="https://jingxlim.github.io/cv.pdf">Download PDF</a><br />
   <a href="mailto:limj2@janelia.hhmi.org">limj2@janelia.hhmi.org</a><br />
   <!-- > [jlim56@jhmi.edu](mailto:jlim56@jhmi.edu) -->
-  <a href="https://jingxlim.github.io">https://jingxlim.github.io</a></p>
+  <a href="https://jingxlim.github.io">Personal webpage</a><br />
+  <a href="https://scholar.google.com/citations?user=vgj6IfgAAAAJ&amp;hl=en">Google Scholar</a> // <a href="https://github.com/jingxlim">GitHub</a><br />
+  <!-- > [https://jingxlim.github.io](https://jingxlim.github.io)   -->
+  <!-- > [https://scholar.google.com/citations?user=vgj6IfgAAAAJ&hl=en](https://scholar.google.com/citations?user=vgj6IfgAAAAJ&hl=en) // [https://github.com/jingxlim](https://github.com/jingxlim)   --></p>
 </blockquote>
 
 <hr />
 
 <h3 id="profile">Profile</h3>
 
-<p>I am a PhD candidate co-supervised by Misha Ahrens and James Fitzgerald at the HHMI Janelia Research Campus, where I study state-modulation of sensorimotor transformations in larval zebrafish. I am interested in how past experiences, such as past locomotor efficacy and sensory/motor histories, can influence brain representations and animal behavior, and the mechanisms that underlie such modulations.</p>
+<p>I am a PhD candidate co-supervised by Misha Ahrens and Dwight Bergles, and co-mentored by James Fitzgerald, at the HHMI Janelia Research Campus, where I study state-modulation of sensorimotor transformations in larval zebrafish. I am interested in how past experiences, such as past locomotor efficacy and sensory/motor histories, can influence brain representations and animal behavior, and the mechanisms that underlie such modulations.</p>
 
 <hr />
 
@@ -1053,9 +1115,11 @@ div.personalstatement p {
 <dt>Johns Hopkins University, United States of America</dt>
 <dd><em>PhD Neuroscience</em>
 <strong>2017-present</strong>
-<b>Thesis advisors:</b> Misha Ahrens (Janelia), James Fitzgerald (Janelia) and Dwight Bergles (Hopkins)<br />
+<b>Thesis advisors:</b> Misha Ahrens (Janelia) and Dwight Bergles (Hopkins)<br />
+<b>Co-mentor:</b> James Fitzgerald (Janelia)<br />
 <b>Thesis:</b> State modulation of sensorimotor transformations<br />
-<b>Fellowship:</b> National Science Scholarship (PhD) from A*STAR, Singapore</dd>
+<b>Fellowship:</b> National Science Scholarship (PhD) from A*STAR, Singapore<br />
+<b>Rotations:</b> Ernst Niebur, Shreesh Mysore</dd>
 
 <dt>University College London, United Kingdom</dt>
 <dd><em>BSc Neuroscience</em>
@@ -1111,14 +1175,14 @@ To draw functional connections between oscillations in Neuropil 4 and physiology
 <dd><em>Research Officer</em>
 <strong><nobr>Dec 2016-Jun 2017</nobr></strong>
 <u><b>Role of ventrolateral hypothalamic SST neurons in feeding behaviors</b></u><br />
-I developed a custom data visualization and acquisition software for fiber photometry and used it to investigate the effects of sleep-wake cycle on the activity of GCaMP-expressing ventrolateral hypothalamic SST neurons, whose activity controls feeding behaviour.</dd>
+I developed a custom data visualization and acquisition software for fiber photometry and used it to investigate the effects of sleep-wake cycle on the activity of GCaMP-expressing ventrolateral hypothalamic SST neurons, whose activity controls feeding behaviour. This work contributed to a paper: <a href="https://www.science.org/doi/10.1126/sciadv.abe4323"></a></dd>
 
 <dt>Prof George Augustine :: Nanyang Technological University</dt>
 <dd><em>Research Officer</em>
 <strong><nobr>Jun 2015-Dec 2016</nobr></strong>
 <u><b>Reconstruction and simulation of the claustral network</b></u><br />
 <b>Co-supervisor: Prof William Lytton, SUNY Downstate Medical Center</b><br />
-I developed an <i>in silico</i> model of the claustrum with simplified integrate-and-fire spiking neurons tuned to intrinsic electrophysiological properties of different cell types and with connectivity based on optogenetic circuit-mapping data. I then performed a multitude of simulations in exploration of the dynamical features of the network. I presented this work at Society for Claustrum Research Annual Symposium 2016 and RIKEN Brain Science Institute Summer Program 2016.</dd>
+I developed an <i>in silico</i> model of the claustrum with simplified integrate-and-fire spiking neurons tuned to intrinsic electrophysiological properties of different cell types and with connectivity based on optogenetic circuit-mapping data. I then performed a multitude of simulations in exploration of the dynamical features of the network. I presented this work at RIKEN Brain Science Institute Summer Program 2016 and Society for Claustrum Research Annual Symposium 2016. Conference proceedings: <a href="https://www.tandfonline.com/doi/full/10.1080/20023294.2017.1349859"></a></dd>
 
 <dt>Dr Beverley Clark :: Wolfson Institute for Biomedical Research, UCL</dt>
 <dd><em>Undergraduate Thesis Project Researcher</em>
@@ -1185,7 +1249,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 </thead>
 <tbody>
 <tr>
-  <td align="left"><strong>A&#42;STAR-RIKEN BSI Summer Program Travel Award</strong></td>
+  <td align="left"><strong>A&#42;STAR-RIKEN Brain Science Institute Summer Program Travel Award</strong></td>
   <td align="right"><strong>2016</strong></td>
 </tr>
 </tbody>
@@ -1213,24 +1277,27 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 <h4>Journal Articles</h4>
 
 <ul>
-<li>Hannah M. Schryver, <u><b>Jing-Xuan Lim</b></u>, Shreesh P. Mysore. <b>Distinct neural mechanisms construct classical versus extraclassical inhibitory surrounds in an inhibitory nucleus in the midbrain attention network.</b> <i>Under review. bioRxiv preprint available: </i> <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990952v1.full.pdf"></a></li>
-<li>Siew Cheng Phua, Yu Lin Tan, Esra Senol, Chun-Yao Lee, Jin Hui C. Chiam, Yanmin Peng, Hasan Mohammad, <u><b>Jing-Xuan Lim</b></u>, Yu Fu. <b>A distinct parabrachial circuit for motical suppression by acute pain.</b> <i>In preparation for re-submission.</i></li>
-<li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton. <b>Computational models of claustrum subnetworks.</b> <i>In preparation.</i></li>
-</ul>
-
-<h4>Abstracts</h4>
-
-<ul>
-<li>Brendan Colvert, Yi Man, Shashank Pisupati, <u><b>Jing-Xuan Lim</b></u>, Matthew McHenry &amp; Eva Kanso (2018). <b>Evasion strategies of zebrafish larvae.</b> <i>Bulletin of the American Physical Society</i>, Volume 63, Number 13. <a href="http://meetings.aps.org/link/BAPS.2018.DFD.F20.4"></a></li>
+<li>Yan Zhang, Márton Rózsa, Yajie Liang, Daniel Bushey, Ziqiang Wei, Jihong Zheng, Daniel Reep, Gerard Joey Broussard, Arthur Tsang, Getahun Tsegaye, Sujatha Narayan, Christopher J. Obara, <u><b>Jing-Xuan Lim</u></b>, Ronak Patel, Rongwei Zhang, Misha B. Ahrens, Glenn C. Turner, Samuel S.-H. Wang, Wyatt L. Korff, Eric R. Schreiter, Karel Svoboda, Jeremy P. Hasseman, Ilya Kolb, Loren L. Looger (2021). <b>Fast and sensitive GCaMP calcium indicators for imaging neural populations.</b> <i>bioRxiv 2021.11.08.467793</i> <a href="https://doi.org/10.1101/2021.11.08.467793"></a></li>
+<li>Siew Cheng Phua, Yu Lin Tan, Alison Maun Yeng Kok, Esra Senol, Christine Jin Hui Chiam, Chun-Yao Lee, Yanmin Peng, Auriel Theodora Jacobea Lim, Hasan Mohammad, <u><b>Jing-Xuan Lim</u></b>, Yu Fu (2021). <b>A distinct parabrachial–to–lateral hypothalamus circuit for motivational suppression of feeding by nociception.</b> <i>Sci. Adv. 7, eabe4323.</i> <a href="https://www.science.org/doi/10.1126/sciadv.abe4323"></a></li>
+<li>Hannah M. Schryver, <u><b>Jing-Xuan Lim</b></u>, Shreesh P. Mysore (2020). <b>Distinct neural mechanisms construct classical versus extraclassical inhibitory surrounds in an inhibitory nucleus in the midbrain attention network.</b> <i>Under review. bioRxiv preprint available: bioRxiv 2020.03.13.990952</i> <a href="https://doi.org/10.1101/2020.03.13.990952"></a></li>
 </ul>
 
 <h4>Posters</h4>
 
 <ul>
+<li>Hannah M. Schryver, <u><b>Jing-Xuan Lim</b></u> &amp; Shreesh P. Mysore (2021). <b>Distinct neural mechanisms construct classical versus extraclassical inhibitory surrounds in an inhibitory nucleus in the midbrain attention network.</b> <i>Cosyne 2021 (Lisbon)</i></li>
+<li>Hannah M. Schryver, <u><b>Jing-Xuan Lim</b></u> &amp; Shreesh P. Mysore (2019). <b>Construction of classical and competitive surrounds in the owl isthmi pars magnocellularis.</b> <i>Neuroscience 2019 (Society for Neuroscience, Chicago)</i></li>
 <li><u><b>Jing-Xuan Lim</b></u> &amp; Misha Ahrens (2019). <b>State modulation of sensorimotor processing.</b> <i>29th annual Neuroscience Department and Neuroscience Training Program Retreat</i> <a href="https://jingxlim.github.io/jhu19.pdf"></a></li>
 <li><u><b>Jing-Xuan Lim</b></u>, Alireza Sheikhattar, Ziqiang Wei, Misha Ahrens (2018). <b>Neural oscillations in sensorimotor processing.</b> <i>28th annual Neuroscience Department and Neuroscience Training Program Retreat</i> <a href="https://jingxlim.github.io/jhu18.pdf"></a></li>
-<li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine, William W. Lytton (2016). <b>Computational models of claustrum subnetworks.</b> <i>Society for Claustrum Research Annual Symposium 2016</i> <a href="https://jingxlim.github.io/scr16.pdf"></a></li>
+<li>Brendan Colvert, Yi Man, Shashank Pisupati, <u><b>Jing-Xuan Lim</b></u>, Matthew McHenry &amp; Eva Kanso (2018). <b>Evasion strategies of zebrafish larvae.</b> <i>Bulletin of the American Physical Society</i>, Volume 63, Number 13. <a href="http://meetings.aps.org/link/BAPS.2018.DFD.F20.4"></a></li>
+<li>William W. Lytton, <u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, George J. Augustine (2016). <b>Computational models of claustrum subnetworks.</b> <i>Conference Proceedings: 3rd Annual Society for Claustrum Research Meeting, Claustrum</i> <a href="https://www.tandfonline.com/doi/full/10.1080/20023294.2017.1349859"></a> <a href="https://jingxlim.github.io/scr16.pdf"></a></li>
 <li><u><b>Jing-Xuan Lim</b></u>, Salvador Dura-Bernal, Rena Orman, Christoph Kayser, George J. Augustine, William W. Lytton (2016). <b>Reconstruction and simulation of claustral microcircuitry based on optogenetic mapping.</b> <i>RIKEN Brain Science Institute Summer Program 2016.</i> <a href="https://jingxlim.github.io/riken16.pdf"></a></li>
+</ul>
+
+<h4>Resource</h4>
+
+<ul>
+<li>Yan Zhang, Márton Rózsa, Daniel Bushey, Jihong Zheng, Daniel Reep, Yajie Liang, Gerard Joey Broussard, Arthur Tsang, Getahun Tsegaye, Ronak Patel, Sujatha Narayan, <u><b>Jing-Xuan Lim</b></u>, Rongwei Zhang, Misha B. Ahrens, Glenn C. Turner, Samuel S.-H. Wang, Karel Svoboda, Wyatt Korff, Eric R. Schreiter, Jeremy P. Hasseman, Ilya Kolb, Loren L Looger (2020). <b>jGCaMP8 Fast Genetically Encoded Calcium Indicators.</b> <i>figshare</i> <a href="https://doi.org/10.25378/janelia.13148243.v4"></a></li>
 </ul>
 
 <h4>Theses</h4>
@@ -1417,7 +1484,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 <ul>
 <li><dl>
 <dt><nobr>Misha Ahrens</nobr></dt>
-<dd><nobr>PhD mentor</nobr><br />
+<dd><nobr>PhD Thesis advisor</nobr><br />
 <nobr>+1 571 209 4174</nobr><br />
 <nobr>ahrensm@janelia.hhmi.org</nobr></dd>
 </dl></li>
@@ -1429,7 +1496,7 @@ I performed laboratory technician duties such as keeping stocks, collecting virg
 </dl></li>
 <li><dl>
 <dt><nobr>George Augustine</nobr></dt>
-<dd><nobr>Postbaccalaureate mentor</nobr><br />
+<dd><nobr>Postbaccalaureate advisor</nobr><br />
 <nobr>+65 6778 2012</nobr><br />
 <nobr>george.augustine@ntu.edu.sg</nobr></dd>
 </dl></li>
